@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 import { } from '../../helpers/icons';
 
 const technologies = techs.map(tech => ({ icon: tech.reactIcon }))
-console.log(technologies)
+// console.log(technologies)
 function Technologies() {
 
 
