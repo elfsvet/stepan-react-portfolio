@@ -1,0 +1,24 @@
+ .contact__main__container {
+  /* background-image: url(../../images/ssspiral.svg);
+  background-size: cover; */
+  background-image: url(../../images/subtle-prism.svg);
+
+}
+
+#contact__form__container {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    min-height: calc(100vh - 390px);
+   
+
+}
+#contact__form__container h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.error-text {
+    font-size: 3rem;
+    color: crimson;
+}

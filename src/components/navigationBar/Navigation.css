@@ -1,0 +1,32 @@
+.navigation-container {
+    background-color: var(--nav-color);
+    color           : white;
+    position        : 'fixed';
+    
+
+    top  : '0';
+    width: '100%';
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--font-color) !important;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--font-color) !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.links a:hover {
+    background-color: var(--font-color-hover);
+}
+
+/* #home {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+}
+*/
