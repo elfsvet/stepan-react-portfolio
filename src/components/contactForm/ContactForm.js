@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import './ContactForm.css';
 import Container from 'react-bootstrap/Container';
 import capitalizeFirstLetter from '../../helpers/capitalizeFirstLetter.js';
+import { Row } from 'react-bootstrap';
 
 const ContactForm = () => {
     const [errorMessage, setErrorMessage] = useState('');
@@ -98,11 +99,14 @@ const ContactForm = () => {
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
+                <Row>
 
-                <Button
-                    variant="dark"
-                    type="submit"
-                    data-testid='button'>Submit</Button>
+                    <Button
+
+                        variant="dark"
+                        type="submit"
+                        data-testid='button'>Submit</Button>
+                </Row>
 
             </Container>
         </div>

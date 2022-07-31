@@ -1,14 +1,14 @@
 
 import './App.css';
 import React, { useCallback, useState, useEffect } from 'react';
-import Navigation from './components/navigationBar/NavigationBar'
+import Navigation from './components/NavigationBar/NavigationBar'
 import Particles from "./components/Particles";
-import Header from './components/header/Header'
-import AboutMe from './components/aboutMe/AboutMe';
-import Technologies from './components/technologies/Technologies';
-import Portfolio from './components/portfolio/Portfolio';
-import ContactMe from './components/contactMe/ContactMe';
-import ContactForm from './components/contactForm/ContactForm';
+import Header from './components/Header/Header'
+import AboutMe from './components/AboutMe/AboutMe';
+import Technologies from './components/Technologies/Technologies';
+import Portfolio from './components/Portfolio/Portfolio';
+import ContactMe from './components/ContactMe/ContactMe';
+import ContactForm from './components/ContactForm/ContactForm';
 import { navigationLinks } from './helpers/navigationLinks';
 
 function App() {
