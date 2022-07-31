@@ -34,7 +34,7 @@ const NavigationBar = ({ currentCategory, handleCategoryChange }) => {
         <div id='home'>
             <Navbar className='navigation-container' collapseOnSelect expand="md" style={{ zIndex: 2 }}>
                 <Navbar.Brand
-                href="/"
+                href="/" // to refresh and get to the home page.
                 style={{ marginLeft: '1rem' }}>
                     Stepan Matysik
                 </Navbar.Brand>
