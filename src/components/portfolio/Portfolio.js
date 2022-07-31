@@ -84,7 +84,7 @@ function Portfolio() {
                 <a href='https://github.com/elfsvet' target='_blank' rel='noreferrer'> https://github.com/elfsvet</a>
             </p>
             <p>This is my Resume:
-                <a href='https://drive.google.com/file/d/1VryKuCQXRWMWMwWZnLS8ELwITgaUzyuP/view?usp=sharing' download target='_blank' rel='noreferrer'>Click to download</a>
+                <a href='https://drive.google.com/file/d/1g6udu4nXU3FyW0A51srYq9oXcj79V0D3/view?usp=sharing' download target='_blank' rel='noreferrer'>Click to download</a>
             </p>
             <Container fluid="lg" style={{ padding: '2rem 0' }}>
                 <Row>
