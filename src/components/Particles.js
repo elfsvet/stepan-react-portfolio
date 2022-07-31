@@ -52,7 +52,7 @@ const ParticlesComponent = (props) => {
           value: '#ffffff'
         },
         links: {
-          color: '#D6EBFF',
+          color: '#00878F',
           enable: true, // enabling this will make particles linked together
           distance: 150, // maximum distance for linking the particles
         },
