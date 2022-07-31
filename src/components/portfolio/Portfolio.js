@@ -8,7 +8,7 @@ import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { gitHub } from '../../helpers/icons'
-
+import pdf from '../../resume/resume.pdf'
 
 function Portfolio() {
     const [modalShow, setModalShow] = useState(false);
@@ -35,13 +35,30 @@ function Portfolio() {
                     <p>{data.summary}</p>
                     <Image src={data.image} style={{ width: '200px' }} />
                 </Modal.Body>
-                <a id='portfolio__modal__link' href={data.link} target='_blank' rel='noreferrer'>Go to site</a>
-                <a id='portfolio__modal__link' href={data.github_link} target='_blank' rel='noreferrer'>{gitHub}
-                </a>
+                {/* <a id='portfolio__modal__link' href={data.link} target='_blank' rel='noreferrer'>Go to site</a> */}
+                <Button
+                    // id='portfolio__modal__link'
+                    href={data.link}
+                    target="_blank"
+                    style={{ maxWidth: "150px", background: "#22262a", margin: "5px", borderColor: 'black' }}
+                >
+                    Go to Web Site
+                </Button>
+                {/* <a id='portfolio__modal__link' href={data.github_link} target='_blank' rel='noreferrer' style={{ textDecoration: 'none', color: 'black'}}>{gitHub}
+                </a> */}
+                <Button
+                    // id='portfolio__modal__link'
+                    href={data.github_link}
+                    target="_blank"
+                    style={{ maxWidth: "150px", background: "#22262a", margin: "5px", borderColor: 'black' }}
+                >
+                    {gitHub}
+                </Button>
+
                 <Modal.Footer>
                     <div>Technologies used: </div>
                     <p style={{ fontSize: '0.7rem', marginRight: 'auto' }}>{data.tech}</p>
-                    <Button onClick={() => setModalShow(false)}>Close</Button>
+                    <Button variant="danger" onClick={() => setModalShow(false)}>Close</Button>
                 </Modal.Footer>
             </Modal>
         )
@@ -81,11 +98,26 @@ function Portfolio() {
                 <h1>Portfolio</h1>
             </div>
             <p>This is my GitHub page:
-                <a href='https://github.com/elfsvet' target='_blank' rel='noreferrer'> https://github.com/elfsvet</a>
+                {/* <a href='https://github.com/elfsvet' target='_blank' rel='noreferrer' style={{ color: 'black'}}>{gitHub}</a> */}
+                <Button
+                    href='https://github.com/elfsvet'
+                    target="_blank"
+                    style={{ maxWidth: "250px", background: "#22262a", marginLeft: "5px", borderColor: 'black' }}
+                >
+                    {gitHub}
+                </Button>
             </p>
             <p>This is my Resume:
-                <a href='https://drive.google.com/file/d/1g6udu4nXU3FyW0A51srYq9oXcj79V0D3/view?usp=sharing' download target='_blank' rel='noreferrer'>Click to download</a>
+                {/* <a href='https://drive.google.com/file/d/1g6udu4nXU3FyW0A51srYq9oXcj79V0D3/view?usp=sharing' download target='_blank' rel='noreferrer'>Click to download</a> */}
+                <Button
+                    href={pdf}
+                    target="_blank"
+                    style={{ maxWidth: "250px", background: "#22262a", marginLeft: "5px", borderColor: 'black' }}
+                >
+                    Download
+                </Button>
             </p>
+
             <Container fluid="lg" style={{ padding: '2rem 0' }}>
                 <Row>
                     {mapped}

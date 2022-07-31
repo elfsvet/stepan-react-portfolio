@@ -100,7 +100,7 @@ const ContactForm = () => {
                 )}
 
                 <Button
-                    variant="primary"
+                    variant="dark"
                     type="submit"
                     data-testid='button'>Submit</Button>
 
