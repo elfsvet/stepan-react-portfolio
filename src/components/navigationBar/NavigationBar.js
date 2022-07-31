@@ -21,7 +21,8 @@ const createLinks = (handle) => {
 
 const NavigationBar = ({ currentCategory, handleCategoryChange }) => {
 
-
+    //! this is the logic for changing the tab name with click
+    //! If you want to check the requirement uncomment the line below. I personally prefer without it.
     // useEffect(() => {
     //     console.log(currentCategory)
     //     document.title = currentCategory
