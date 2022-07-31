@@ -5,7 +5,7 @@
     flex-direction  : column;
     align-items     : center;
     padding         : 3rem;
-    min-height: calc(100vh - 390px);
+    min-height: calc(100vh - 380px);
     background-image: url(../../images/subtle-prism.svg);
 
 }
