@@ -21,7 +21,7 @@ const createLinks = (handle) => {
 }
 
 
-function ContactMe({currentCategory, handleCategoryChange}) {
+function ContactMe({ currentCategory, handleCategoryChange }) {
     return (
         <div className="contactMe__container" id="contact">
             <div className='contactMe__data__links'>
@@ -48,93 +48,6 @@ function ContactMe({currentCategory, handleCategoryChange}) {
                 </div>
                 <div>
                     {createLinks(handleCategoryChange)}
-                    {/* <ul>
-                        <li onClick={() => handleCategoryChange('HOME')}
-                            href={"#home"}>
-                            HOME
-                        </li>
-                        <li onClick={() => handleCategoryChange('ABOUT')}
-                            href={"#about"}
-                        >
-                            ABOUT
-                        </li>
-                        <li 
-                        // onClick={() => handleCategoryChange('TECHNOLOGIES')}
-                            href={"#technologies"}
-                        >
-                            TECHNOLOGIES
-
-                        </li>
-                        <li
-                        //  onClick={() => handleCategoryChange('PORTFOLIO')}
-                            href={"#portfolio"}
-                        >
-                            PORTFOLIO
-                        </li>
-                        <li onClick={() => handleCategoryChange('CONTACT')}
-                            href={"#contact"}
-                        >
-                            CONTACT
-
-                        </li>
-                    </ul> */}
-
-
-
-                    {/* <Nav>
-                        <Nav.Item>
-
-                            <Nav.Link
-                                // key={index}
-                                onClick={() => handleCategoryChange('HOME')}
-                                href={"#home"}
-                            >
-                                HOME
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-
-                            <Nav.Link
-                                // key={index}
-                                onClick={() => handleCategoryChange('ABOUT')}
-                                href={"#about"}
-                            >
-                                ABOUT
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-
-                            <Nav.Link
-                                // key={index}
-                                onClick={() => handleCategoryChange('TECHNOLOGIES')}
-                                href={"#technologies"}
-                            >
-                                TECHNOLOGIES
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-
-                            <Nav.Link
-                                // key={index}
-                                onClick={() => handleCategoryChange('PORTFOLIO')}
-                                href={"#portfolio"}
-                            >
-                                PORTFOLIO
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-
-                            <Nav.Link
-                                // key={index}
-                                onClick={() => handleCategoryChange('CONTACT')}
-                                href={"#contact"}
-                            >
-                                CONTACT
-                            </Nav.Link>
-                        </Nav.Item>
-                    </Nav> */}
-
-                    
                 </div>
             </div>
             <div style={{ textAlign: 'center' }}>Copyright&copy; {new Date().getFullYear()} All rights reserved</div>

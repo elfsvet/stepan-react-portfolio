@@ -15,13 +15,8 @@ function App() {
 
   const categories = navigationLinks.map((e) => ({ name: e.name }))
 
-
-  // console.log(categories)
-  // const categories = [{ name: 'HOME' }]
   const [currentCategory, setCurrentCategory] = useState("HOME");
 
-
-  
   const renderCategory = () => {
     if (currentCategory === 'HOME') {
 
@@ -41,12 +36,6 @@ function App() {
     }
     return <ContactForm />;
   };
-      // useEffect(() => {
-    //     console.log(currentCategory)
-    //     document.title = currentCategory
-    // }, [currentCategory]);
-    //  useEffect(() =>{
-    //  },[currentCategory])
 
   // handler takes a Category parameter and changes the current Category to this Category
 
