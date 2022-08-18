@@ -1,5 +1,6 @@
 import linguaImage from '../images/Lingua.gif';
 import barHop from '../images/Bar-Hop.gif';
+import homebrew from '../images/homebrew.gif';
 import techBlog from '../images/tech_blog.gif';
 import budgetTracker from '../images/budget_tracker.gif';
 import noteTacker from '../images/note_taker.gif';
@@ -7,6 +8,14 @@ import weatherDashboard from '../images/weather_dashboard.gif';
 
 
 const portfolioData = [
+    {
+        image: homebrew,
+        link: 'https://radiant-thicket-52137.herokuapp.com/',
+        github_link: 'https://github.com/elfsvet/homebrew',
+        title: 'Homebrew',
+        summary: "We have created an all in one Dungeons and Dragons application where users can create an account, create and save their own character builds, see and comment on other user's characters, and receive feedback on their own builds! We hope that HOMEBREW will allow players to show off their creativity and find inspiration while building a community.",
+        tech: 'MERN SPA'
+    },
     {
         image: linguaImage,
         link: 'https://protected-island-60101.herokuapp.com/',
