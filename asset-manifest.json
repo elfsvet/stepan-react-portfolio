@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stepan-react-portfolio/static/css/main.2d4e29e2.css",
-    "main.js": "/stepan-react-portfolio/static/js/main.651edfe5.js",
+    "main.js": "/stepan-react-portfolio/static/js/main.e7b84eed.js",
     "static/js/787.85eea7d7.chunk.js": "/stepan-react-portfolio/static/js/787.85eea7d7.chunk.js",
     "static/media/Bar-Hop.gif": "/stepan-react-portfolio/static/media/Bar-Hop.a511f34161ab3985abc6.gif",
     "static/media/Lingua.gif": "/stepan-react-portfolio/static/media/Lingua.83c2a0ea47345a27435b.gif",
@@ -9,16 +9,17 @@
     "static/media/weather_dashboard.gif": "/stepan-react-portfolio/static/media/weather_dashboard.a81df84f4ef63af3d8a4.gif",
     "static/media/note_taker.gif": "/stepan-react-portfolio/static/media/note_taker.dba917cce64cd0a01666.gif",
     "static/media/budget_tracker.gif": "/stepan-react-portfolio/static/media/budget_tracker.6a631babaee8960a010c.gif",
+    "static/media/homebrew.gif": "/stepan-react-portfolio/static/media/homebrew.6c63356cb2db9ea68a36.gif",
     "static/media/resume.pdf": "/stepan-react-portfolio/static/media/resume.454c983db5c679a28661.pdf",
     "static/media/stepan.jpg": "/stepan-react-portfolio/static/media/stepan.0dd88e4a263be4f4abe8.jpg",
     "static/media/subtle-prism.svg": "/stepan-react-portfolio/static/media/subtle-prism.aa429c5f8d2afd987d0b.svg",
     "index.html": "/stepan-react-portfolio/index.html",
     "main.2d4e29e2.css.map": "/stepan-react-portfolio/static/css/main.2d4e29e2.css.map",
-    "main.651edfe5.js.map": "/stepan-react-portfolio/static/js/main.651edfe5.js.map",
+    "main.e7b84eed.js.map": "/stepan-react-portfolio/static/js/main.e7b84eed.js.map",
     "787.85eea7d7.chunk.js.map": "/stepan-react-portfolio/static/js/787.85eea7d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d4e29e2.css",
-    "static/js/main.651edfe5.js"
+    "static/js/main.e7b84eed.js"
   ]
 }
