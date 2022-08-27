@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import validateEmail from '../../helpers/validateEmail.js';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -11,6 +11,8 @@ const ContactForm = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
+
+
     // JSX
     const handleChange = (e) => {
         if (e.target.name === 'email') {
@@ -32,13 +34,15 @@ const ContactForm = () => {
             console.log('Handle Form', formState);
         }
     };
-    console.log(formState);
-
+    // console.log(formState);
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
             console.log('Submit Form', formState);
         }
+        
+        
     };
 
 

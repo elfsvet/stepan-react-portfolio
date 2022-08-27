@@ -1,6 +1,6 @@
 import React from "react";
 import { IconContext } from "react-icons";
-import { DiReact, DiJavascript1, DiCss3, DiJqueryLogo, DiNodejs, DiMysql, DiGulp, DiPostgresql, DiAws, DiFirebase, DiSass, DiBootstrap, DiVisualstudio, DiMongodb, DiNpm, DiPhotoshop, DiIllustrator } from "react-icons/di";
+
 import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 
 

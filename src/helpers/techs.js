@@ -1,4 +1,6 @@
 import { DiReact, DiJavascript1, DiCss3, DiJqueryLogo, DiNodejs, DiMysql, DiGulp, DiPostgresql, DiAws, DiFirebase, DiSass, DiBootstrap, DiVisualstudio, DiMongodb, DiNpm, DiPhotoshop, DiIllustrator } from "react-icons/di";
+import {SiStyledcomponents} from 'react-icons/si'
+
 
 export const techs = [
     {
@@ -100,5 +102,11 @@ export const techs = [
         reactIcon: DiIllustrator,
         iconName: 'illustrator'
         
-    }
+    },
+    {
+        name: 'Styled Components',
+        reactIcon: SiStyledcomponents,
+        iconName: 'styledcomponents'
+        
+    },
 ]

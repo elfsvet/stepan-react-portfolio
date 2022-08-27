@@ -13,7 +13,7 @@ import { navigationLinks } from './helpers/navigationLinks';
 
 function App() {
 
-  const categories = navigationLinks.map((e) => ({ name: e.name }))
+  // const categories = navigationLinks.map((e) => ({ name: e.name }))
 
   const [currentCategory, setCurrentCategory] = useState("HOME");
 
