@@ -1,5 +1,5 @@
-import { DiReact, DiJavascript1, DiCss3, DiJqueryLogo, DiNodejs, DiMysql, DiGulp, DiPostgresql, DiAws, DiFirebase, DiSass, DiBootstrap, DiVisualstudio, DiMongodb, DiNpm, DiPhotoshop, DiIllustrator } from "react-icons/di";
-import {SiStyledcomponents} from 'react-icons/si'
+import { DiReact, DiJavascript1, DiCss3, DiJqueryLogo, DiNodejs, DiMysql, DiGulp, DiPostgresql, DiAws, DiSass, DiBootstrap, DiVisualstudio, DiMongodb, DiNpm, DiPhotoshop, DiIllustrator } from "react-icons/di";
+import {SiStyledcomponents, SiFirebase} from 'react-icons/si'
 
 
 export const techs = [
@@ -57,7 +57,7 @@ export const techs = [
     },
     {
         name: 'Firebase',
-        reactIcon: DiFirebase,
+        reactIcon: SiFirebase,
         iconName: 'firebase'
         
     },
