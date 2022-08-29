@@ -5,9 +5,17 @@ import techBlog from '../images/tech_blog.gif';
 import budgetTracker from '../images/budget_tracker.gif';
 import noteTacker from '../images/note_taker.gif';
 import weatherDashboard from '../images/weather_dashboard.gif';
-
+import clothingShop from '../images/clothing_shop.gif';
 
 const portfolioData = [
+    {
+        image: clothingShop,
+        link: 'https://merry-figolla-b3e116.netlify.app/',
+        github_link: 'https://github.com/elfsvet/clothing-shop.git',
+        title: 'Clothing Shop',
+        summary: "This is E-commerce project for a small shop i started to create... It is still in development.",
+        tech: 'MERN SPA, Styled-Components, Firebase, SASS, Redux'
+    },
     {
         image: homebrew,
         link: 'https://radiant-thicket-52137.herokuapp.com/',
