@@ -14,7 +14,7 @@ const portfolioData = [
         github_link: 'https://github.com/elfsvet/clothing-shop.git',
         title: 'Clothing Shop',
         summary: "This is E-commerce project for a small shop i started to create... It is still in development.",
-        tech: 'MERN SPA, Styled-Components, Firebase, SASS, Redux'
+        tech: 'MERN SPA, Styled-Components, Firebase, SASS, Redux, Netlify'
     },
     {
         image: homebrew,

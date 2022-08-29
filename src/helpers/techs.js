@@ -23,6 +23,8 @@ import {
   SiJsonwebtokens,
   SiRedux,
   SiHtml5,
+  SiNetlify,
+  SiHeroku,
 } from 'react-icons/si';
 
 export const techs = [
@@ -73,6 +75,11 @@ export const techs = [
     iconName: 'mysql',
   },
   {
+    name: 'Postgresql',
+    reactIcon: DiPostgresql,
+    iconName: 'postgresql',
+  },
+  {
     name: 'AWS',
     reactIcon: DiAws,
     iconName: 'aws',
@@ -83,14 +90,19 @@ export const techs = [
     iconName: 'firebase',
   },
   {
-    name: 'Postgresql',
-    reactIcon: DiPostgresql,
-    iconName: 'postgresql',
-  },
-  {
     name: 'npm',
     reactIcon: DiNpm,
     iconName: 'npm',
+  },
+  {
+    name: 'Heroku',
+    reactIcon: SiHeroku,
+    iconName: 'heroku',
+  },
+  {
+    name: 'Netlify',
+    reactIcon: SiNetlify,
+    iconName: 'netlify',
   },
   {
     name: 'jQuery',
