@@ -6,8 +6,17 @@ import budgetTracker from '../images/budget_tracker.gif';
 import noteTacker from '../images/note_taker.gif';
 import weatherDashboard from '../images/weather_dashboard.gif';
 import clothingShop from '../images/clothing_shop.gif';
+import shopp from '../images/shopp.gif';
 
 const portfolioData = [
+    {
+        image: shopp,
+        link: 'https://proshopappmatysik.herokuapp.com/',
+        github_link: 'https://github.com/elfsvet/e-commerce-proshop.git',
+        title: 'Shopp',
+        summary: "This my second e-commerce project. Here we used PayPal payment, MongoBD, and axios. It has logic for login/logout, user/admin, ability to add products with images, checkout and monitor your delivery progress. Thank you for shopping with us!",
+        tech: 'MERN SPA, Bootswatch, CSS, Redux, Heroku, JTW, Mongoose, Morgan, Multer, React-Helmet, AXIOS'
+    },
     {
         image: clothingShop,
         link: 'https://merry-figolla-b3e116.netlify.app/',
