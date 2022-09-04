@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/stepan-react-portfolio/static/css/main.2d4e29e2.css",
-    "main.js": "/stepan-react-portfolio/static/js/main.3597b3f7.js",
+    "main.js": "/stepan-react-portfolio/static/js/main.bae9e8ed.js",
     "static/js/787.85eea7d7.chunk.js": "/stepan-react-portfolio/static/js/787.85eea7d7.chunk.js",
     "static/media/clothing_shop.gif": "/stepan-react-portfolio/static/media/clothing_shop.8d009e34c5ecae449380.gif",
     "static/media/Bar-Hop.gif": "/stepan-react-portfolio/static/media/Bar-Hop.a511f34161ab3985abc6.gif",
+    "static/media/shopp.gif": "/stepan-react-portfolio/static/media/shopp.91996b9cd018f9ed3e5e.gif",
     "static/media/Lingua.gif": "/stepan-react-portfolio/static/media/Lingua.83c2a0ea47345a27435b.gif",
     "static/media/tech_blog.gif": "/stepan-react-portfolio/static/media/tech_blog.fcc2e5e9444240683d56.gif",
     "static/media/weather_dashboard.gif": "/stepan-react-portfolio/static/media/weather_dashboard.a81df84f4ef63af3d8a4.gif",
@@ -16,11 +17,11 @@
     "static/media/subtle-prism.svg": "/stepan-react-portfolio/static/media/subtle-prism.aa429c5f8d2afd987d0b.svg",
     "index.html": "/stepan-react-portfolio/index.html",
     "main.2d4e29e2.css.map": "/stepan-react-portfolio/static/css/main.2d4e29e2.css.map",
-    "main.3597b3f7.js.map": "/stepan-react-portfolio/static/js/main.3597b3f7.js.map",
+    "main.bae9e8ed.js.map": "/stepan-react-portfolio/static/js/main.bae9e8ed.js.map",
     "787.85eea7d7.chunk.js.map": "/stepan-react-portfolio/static/js/787.85eea7d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d4e29e2.css",
-    "static/js/main.3597b3f7.js"
+    "static/js/main.bae9e8ed.js"
   ]
 }
