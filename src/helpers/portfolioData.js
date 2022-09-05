@@ -14,7 +14,7 @@ const portfolioData = [
         link: 'https://proshopappmatysik.herokuapp.com/',
         github_link: 'https://github.com/elfsvet/e-commerce-proshop.git',
         title: 'Shopp',
-        summary: "This my second e-commerce project. Here we used PayPal payment, MongoBD, and axios. It has logic for login/logout, user/admin, ability to add products with images, checkout and monitor your delivery progress. Thank you for shopping with us!",
+        summary: "This is my second e-commerce project. Here we used PayPal payment, MongoBD, and axios. It has logic for login/logout, user/admin, ability to add products with images, checkout and monitor your delivery progress. Thank you for shopping with us!",
         tech: 'MERN SPA, Bootswatch, CSS, Redux, Heroku, JTW, Mongoose, Morgan, Multer, React-Helmet, AXIOS'
     },
     {
