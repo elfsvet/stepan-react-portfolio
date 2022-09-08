@@ -25,6 +25,8 @@ import {
   SiHtml5,
   SiNetlify,
   SiHeroku,
+  SiPostman,
+  SiInsomnia
 } from 'react-icons/si';
 
 export const techs = [
@@ -103,6 +105,16 @@ export const techs = [
     name: 'Netlify',
     reactIcon: SiNetlify,
     iconName: 'netlify',
+  },
+  {
+    name: 'Postman',
+    reactIcon: SiPostman,
+    iconName: 'postman',
+  },
+  {
+    name: 'Insomnia',
+    reactIcon: SiInsomnia,
+    iconName: 'insomnia',
   },
   {
     name: 'jQuery',
