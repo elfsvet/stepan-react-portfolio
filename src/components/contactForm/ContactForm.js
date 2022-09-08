@@ -7,11 +7,13 @@ import './ContactForm.css';
 import Container from 'react-bootstrap/Container';
 import capitalizeFirstLetter from '../../helpers/capitalizeFirstLetter.js';
 import { Row } from 'react-bootstrap';
-// import dotenv from 'dotenv'
+// import { text } from 'express'
+
+// import express from 'express'
 
 const ContactForm = () => {
   const form = useRef();
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState(' ');
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -37,33 +39,35 @@ const ContactForm = () => {
     }
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
+      //   console.log('Handle Form', formState);
     }
   };
   // console.log(formState);
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      console.log('Submit Form', formState);
+      emailjs
+        .sendForm(
+          'service_xat53sf',
+          'template_z8p9ju9',
+          form.current,
+          'sDWRZlVh3e8pCsepP'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log('Message sent');
+            e.target.reset();
+            setFormState({ ...formState, name: '', email: '', message: '' });
+            // update in the future for a nice message
+            alert('Message sent successfully');
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
-    emailjs
-      .sendForm(
-        process.env.YOUR_SERVICE_ID,
-        process.env.YOUR_TEMPLATE_ID,
-        form.current,
-        process.env.YOUR_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log('Message sent');
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
   };
 
   return (
@@ -71,21 +75,17 @@ const ContactForm = () => {
       <Container id='contact__form__container'>
         <h1>Contact me</h1>
 
-        <Form onSubmit={handleSubmit} id='contact__form' ref={form}>
+        <Form id='contact__form' ref={form} onSubmit={sendEmail}>
           <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
-            {/* name input */}
-
             <Form.Label>Name:</Form.Label>
             <Form.Control
-              type='name'
+              type='text'
               name='name'
-              placeholder='Full name'
+              placeholder='Full Name'
               defaultValue={name}
               onBlur={handleChange}
-            />
+            ></Form.Control>
           </Form.Group>
-
-          {/* email input */}
 
           <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
             <Form.Label>Email address:</Form.Label>
@@ -98,8 +98,6 @@ const ContactForm = () => {
             />
           </Form.Group>
 
-          {/* message text area */}
-
           <Form.Group className='mb-3' controlId='exampleForm.ControlTextarea1'>
             <Form.Label>Message:</Form.Label>
             <Form.Control
@@ -110,6 +108,11 @@ const ContactForm = () => {
               onBlur={handleChange}
             />
           </Form.Group>
+          <Row>
+            <Button variant='dark' type='submit'>
+              Submit
+            </Button>
+          </Row>
         </Form>
 
         {/* this is refers as if(errorMessage){add div and p tags with info} */}
@@ -118,11 +121,6 @@ const ContactForm = () => {
             <p className='error-text'>{errorMessage}</p>
           </div>
         )}
-        <Row>
-          <Button variant='dark' type='submit' data-testid='button'>
-            Submit
-          </Button>
-        </Row>
       </Container>
     </div>
   );
