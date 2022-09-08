@@ -4,10 +4,12 @@
   "homepage": "https://elfsvet.github.io/stepan-react-portfolio",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.2.1",
+    "dotenv": "^16.0.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",

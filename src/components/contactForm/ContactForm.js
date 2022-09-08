@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import validateEmail from '../../helpers/validateEmail.js';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -6,115 +7,125 @@ import './ContactForm.css';
 import Container from 'react-bootstrap/Container';
 import capitalizeFirstLetter from '../../helpers/capitalizeFirstLetter.js';
 import { Row } from 'react-bootstrap';
+// import dotenv from 'dotenv'
 
 const ContactForm = () => {
-    const [errorMessage, setErrorMessage] = useState('');
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
+  const form = useRef();
+  const [errorMessage, setErrorMessage] = useState('');
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const { name, email, message } = formState;
 
+  // JSX
+  const handleChange = (e) => {
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage('Your email is invalid.');
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
+      } else {
+        setErrorMessage('');
+      }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log('Handle Form', formState);
+    }
+  };
+  // console.log(formState);
 
-    // JSX
-    const handleChange = (e) => {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
-                setErrorMessage('');
-            }
-        } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`${(capitalizeFirstLetter(e.target.name))} is required.`);
-            } else {
-                setErrorMessage('');
-            }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!errorMessage) {
+      console.log('Submit Form', formState);
+    }
+    emailjs
+      .sendForm(
+        process.env.YOUR_SERVICE_ID,
+        process.env.YOUR_TEMPLATE_ID,
+        form.current,
+        process.env.YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('Message sent');
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
         }
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
-            console.log('Handle Form', formState);
-        }
-    };
-    // console.log(formState);
-    
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            console.log('Submit Form', formState);
-        }
-        
-        
-    };
+      );
+  };
 
+  return (
+    <div className='contact__main__container'>
+      <Container id='contact__form__container'>
+        <h1>Contact me</h1>
 
-    return (
-        <div className='contact__main__container'>
+        <Form onSubmit={handleSubmit} id='contact__form' ref={form}>
+          <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
+            {/* name input */}
 
-            <Container id="contact__form__container" >
-                <h1>Contact me</h1>
+            <Form.Label>Name:</Form.Label>
+            <Form.Control
+              type='name'
+              name='name'
+              placeholder='Full name'
+              defaultValue={name}
+              onBlur={handleChange}
+            />
+          </Form.Group>
 
-                <Form onSubmit={handleSubmit} id="contact__form">
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          {/* email input */}
 
-                        {/* name input */}
+          <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
+            <Form.Label>Email address:</Form.Label>
+            <Form.Control
+              type='email'
+              name='email'
+              placeholder='name@example.com'
+              defaultValue={email}
+              onBlur={handleChange}
+            />
+          </Form.Group>
 
-                        <Form.Label>Name:</Form.Label>
-                        <Form.Control
-                            type="name"
-                            name='name'
-                            placeholder="Full name"
-                            defaultValue={name} onBlur={handleChange}
-                        />
-                    </Form.Group>
+          {/* message text area */}
 
-                    {/* email input */}
+          <Form.Group className='mb-3' controlId='exampleForm.ControlTextarea1'>
+            <Form.Label>Message:</Form.Label>
+            <Form.Control
+              as='textarea'
+              name='message'
+              rows={5}
+              defaultValue={message}
+              onBlur={handleChange}
+            />
+          </Form.Group>
+        </Form>
 
-                    <Form.Group
-                        className="mb-3"
-                        controlId="exampleForm.ControlInput1"
-                    >
-                        <Form.Label>Email address:</Form.Label>
-                        <Form.Control
-                            type="email"
-                            name='email'
-                            placeholder="name@example.com"
-                            defaultValue={email} onBlur={handleChange}
-                        />
-                    </Form.Group>
-
-                    {/* message text area */}
-
-                    <Form.Group
-                        className="mb-3"
-                        controlId="exampleForm.ControlTextarea1"
-                    >
-                        <Form.Label>Message:</Form.Label>
-                        <Form.Control
-                            as="textarea"
-                            name="message"
-                            rows={5}
-                            defaultValue={message} onBlur={handleChange}
-                        />
-                    </Form.Group>
-                </Form>
-
-                {/* this is refers as if(errorMessage){add div and p tags with info} */}
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-                <Row>
-
-                    <Button
-
-                        variant="dark"
-                        type="submit"
-                        data-testid='button'>Submit</Button>
-                </Row>
-
-            </Container>
-        </div>
-    )
-}
+        {/* this is refers as if(errorMessage){add div and p tags with info} */}
+        {errorMessage && (
+          <div>
+            <p className='error-text'>{errorMessage}</p>
+          </div>
+        )}
+        <Row>
+          <Button variant='dark' type='submit' data-testid='button'>
+            Submit
+          </Button>
+        </Row>
+      </Container>
+    </div>
+  );
+};
 
 export default ContactForm;
