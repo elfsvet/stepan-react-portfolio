@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stepan-react-portfolio/static/css/main.12b19cd6.css",
-    "main.js": "/stepan-react-portfolio/static/js/main.6327fafc.js",
+    "main.js": "/stepan-react-portfolio/static/js/main.ad606c99.js",
     "static/js/496.757cdef3.chunk.js": "/stepan-react-portfolio/static/js/496.757cdef3.chunk.js",
     "static/media/clothing_shop.gif": "/stepan-react-portfolio/static/media/clothing_shop.8d009e34c5ecae449380.gif",
     "static/media/Bar-Hop.gif": "/stepan-react-portfolio/static/media/Bar-Hop.a511f34161ab3985abc6.gif",
@@ -17,11 +17,11 @@
     "static/media/subtle-prism.svg": "/stepan-react-portfolio/static/media/subtle-prism.aa429c5f8d2afd987d0b.svg",
     "index.html": "/stepan-react-portfolio/index.html",
     "main.12b19cd6.css.map": "/stepan-react-portfolio/static/css/main.12b19cd6.css.map",
-    "main.6327fafc.js.map": "/stepan-react-portfolio/static/js/main.6327fafc.js.map",
+    "main.ad606c99.js.map": "/stepan-react-portfolio/static/js/main.ad606c99.js.map",
     "496.757cdef3.chunk.js.map": "/stepan-react-portfolio/static/js/496.757cdef3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12b19cd6.css",
-    "static/js/main.6327fafc.js"
+    "static/js/main.ad606c99.js"
   ]
 }
