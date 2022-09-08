@@ -13,6 +13,7 @@ import { Row } from 'react-bootstrap';
 
 const ContactForm = () => {
   const form = useRef();
+//   error is not empty on initial state for not letting to send empty form
   const [errorMessage, setErrorMessage] = useState(' ');
   const [formState, setFormState] = useState({
     name: '',
