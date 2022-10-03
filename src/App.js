@@ -1,29 +1,28 @@
-
 import './App.css';
-import React, { useCallback, useState, useEffect } from 'react';
-import Navigation from './components/NavigationBar/NavigationBar'
-import Particles from "./components/Particles";
-import Header from './components/Header/Header'
+import React, { useState } from 'react';
+import Navigation from './components/NavigationBar/NavigationBar';
+import Particles from './components/Particles';
+import Header from './components/Header/Header';
 import AboutMe from './components/AboutMe/AboutMe';
 import Technologies from './components/Technologies/Technologies';
 import Portfolio from './components/Portfolio/Portfolio';
 import ContactMe from './components/ContactMe/ContactMe';
 import ContactForm from './components/ContactForm/ContactForm';
-import { navigationLinks } from './helpers/navigationLinks';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
-
   // const categories = navigationLinks.map((e) => ({ name: e.name }))
 
-  const [currentCategory, setCurrentCategory] = useState("HOME");
+  const [currentCategory, setCurrentCategory] = useState('HOME');
 
   const renderCategory = () => {
     if (currentCategory === 'HOME') {
-
-      return <>
-        <Header />
-        <Particles id='tsparticles' />
-      </>
+      return (
+        <>
+          <Header />
+          <Particles id='tsparticles' />
+        </>
+      );
     }
     if (currentCategory === 'ABOUT') {
       return <AboutMe />;
@@ -42,7 +41,7 @@ function App() {
   const handleCategoryChange = (category) => setCurrentCategory(category);
 
   return (
-    <div className="App">
+    <div className='App'>
       <Navigation
         currentCategory={currentCategory}
         handleCategoryChange={handleCategoryChange}
@@ -50,7 +49,8 @@ function App() {
       {renderCategory()}
       <ContactMe
         currentCategory={currentCategory}
-        handleCategoryChange={handleCategoryChange} />
+        handleCategoryChange={handleCategoryChange}
+      />
     </div>
   );
 }

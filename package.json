@@ -1,7 +1,7 @@
 {
   "name": "stepan-react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://elfsvet.github.io/stepan-react-portfolio",
+  "homepage": "https://elfsvet.github.io/stepan-matysik",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
@@ -10,15 +10,13 @@
     "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.2.1",
     "dotenv": "^16.0.2",
-    "express": "^4.18.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.2.4",
-    "reactjs-popup": "^2.0.5",
-    "tsparticles": "^2.2.4",
     "tsparticles-slim": "^2.2.4",
     "typewriter-effect": "^2.19.0",
     "web-vitals": "^3.0.1"
