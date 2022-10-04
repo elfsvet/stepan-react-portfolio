@@ -2,7 +2,7 @@
   /* background-color: var(--light-color); */
   padding         : 3rem;
   /* background-image: url(../../images/bbblurry.svg); */
-  background-image: url(../../images/subtle-prism.svg);
+  /* background-image: url(../../images/subtle-prism.svg); */
     min-height: calc(100vh - 380px);
 
 
@@ -32,7 +32,7 @@
   top: 50%;  
   left: 50%; 
   transform: translate(-50%, -50%);
-  color: var(--font-color);
+  color: white;
   display: none;
 }
  

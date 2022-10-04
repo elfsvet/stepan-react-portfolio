@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
-
 .App {
-  font-family: 'Nunito',sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   background-color: var(--light-color);
+  background-image: url(./images/pattern-randomized.svg);
+
 }
 
 
 :root {
-  --nav-color       : hsl(210, 11%, 15%);
-  --nav-color-hover : hsl(210, 11%, 45%);
-  --nav-border-color: hsl(210, 11%, 45%);
-  --light-color     : hsl(209, 100%, 92%);
-  --font-color      : hsl(0, 0%, 100%);
-  --font-color-hover: hsl(0, 0%, 40%);
+  --nav-color       : #22262a;
+  --nav-color-hover : #66737f;
+  --nav-border-color: #66737f;
+  --light-color     : #d6ebff;
+  --font-color      : #ffffff;
+  --font-color-hover: #666666;
 }
 
 

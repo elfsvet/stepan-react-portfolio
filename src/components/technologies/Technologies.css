@@ -1,12 +1,12 @@
 .technologies__container {
-    background-color: var(--light-color);
+    /* background-color: var(--light-color); */
     color           : var(--nav-color);
     display         : flex;
     flex-direction  : column;
     align-items     : center;
     padding         : 3rem;
     min-height: calc(100vh - 380px);
-    background-image: url(../../images/subtle-prism.svg);
+    /* background-image: url(../../images/subtle-prism.svg); */
 
 }
 
@@ -22,20 +22,20 @@
 .tech__card {
     width: 15rem;
     height: 10rem;
-    background-color: var(--font-color);
+    background-color: #00888fa1;
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 3px;
-    border-bottom: 5px solid var(--nav-color);
+    border-bottom: 5px solid white;
     transition: all 0.1s;
 }
 
 .tech__icons {
     height: 70px;
-    background-color: var(--light-color);
+    background-color: #022b2d;
     border-radius: 50px;
 }
 

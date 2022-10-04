@@ -13,7 +13,7 @@ import { Row } from 'react-bootstrap';
 
 const ContactForm = () => {
   const form = useRef();
-//   error is not empty on initial state for not letting to send empty form
+  //   error is not empty on initial state for not letting to send empty form
   const [errorMessage, setErrorMessage] = useState(' ');
   const [formState, setFormState] = useState({
     name: '',
@@ -73,7 +73,7 @@ const ContactForm = () => {
 
   return (
     <div className='contact__main__container'>
-      <Container id='contact__form__container'>
+      <Container id='contact__form__container' className='text-white'>
         <h1>Contact me</h1>
 
         <Form id='contact__form' ref={form} onSubmit={sendEmail}>
@@ -110,7 +110,11 @@ const ContactForm = () => {
             />
           </Form.Group>
           <Row>
-            <Button variant='dark' type='submit'>
+            <Button
+              variant='dark'
+              type='submit'
+              style={{ background: '#022b2d', borderColor: 'white' }}
+            >
               Submit
             </Button>
           </Row>

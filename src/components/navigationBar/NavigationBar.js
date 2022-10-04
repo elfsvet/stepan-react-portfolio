@@ -3,10 +3,11 @@ import './Navigation.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { navigationLinks } from '../../helpers/navigationLinks';
+import { Link } from 'react-router-dom'
 const createLinks = (handle) => {
   return navigationLinks.map((e, index) => (
     <Nav.Item key={index}>
-      <Nav.Link  onClick={() => handle(e.name)} href={e.ref}>
+      <Nav.Link  onClick={() => handle(e.name)} to={e.ref}>
         {e.name}
       </Nav.Link>
     </Nav.Item>
@@ -31,8 +32,8 @@ const NavigationBar = ({ currentCategory, handleCategoryChange }) => {
         expand='md'
         style={{ zIndex: 2 }}
       >
-        <Navbar.Brand
-          href='https://elfsvet.github.io/stepan-react-portfolio' // to refresh and get to the home page.
+        <Navbar.Brand as={Link}
+          to='/' // to refresh and get to the home page.
           style={{ marginLeft: '1rem' }}
         >
           Stepan Matysik

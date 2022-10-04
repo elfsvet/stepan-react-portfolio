@@ -93,7 +93,7 @@ function Portfolio() {
   });
 
   return (
-    <div className='portfolio__main__container'>
+    <div className='portfolio__main__container text-white'>
       <div>
         <h1>Portfolio</h1>
       </div>
@@ -104,9 +104,9 @@ function Portfolio() {
           target='_blank'
           style={{
             maxWidth: '250px',
-            background: '#22262a',
+            background: '#022b2d',
             marginLeft: '5px',
-            borderColor: 'black',
+            borderColor: 'white',
           }}
         >
           {gitHub}
@@ -119,9 +119,9 @@ function Portfolio() {
           target='_blank'
           style={{
             maxWidth: '250px',
-            background: '#22262a',
+            background: '#022b2d',
             marginLeft: '5px',
-            borderColor: 'black',
+            borderColor: 'white',
           }}
         >
           Download
