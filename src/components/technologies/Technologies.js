@@ -25,9 +25,7 @@ function Technologies() {
                 </div>
               </IconContext.Provider>
               {/* <DevIcon className="tech__icons" icon={elem.iconName} /> */}
-              <span style={{ margin: '5px', fontSize: '1.5rem' }}>
-                {elem.name}
-              </span>
+              <span className='icon__content'>{elem.name}</span>
             </div>
           );
         })}

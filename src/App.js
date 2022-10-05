@@ -8,7 +8,8 @@ import Technologies from './components/Technologies/Technologies';
 import Portfolio from './components/Portfolio/Portfolio';
 import ContactMe from './components/ContactMe/ContactMe';
 import ContactForm from './components/ContactForm/ContactForm';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 function App() {
   // const categories = navigationLinks.map((e) => ({ name: e.name }))
@@ -41,17 +42,33 @@ function App() {
   const handleCategoryChange = (category) => setCurrentCategory(category);
 
   return (
-    <div className='App'>
-      <Navigation
+    <BrowserRouter>
+      {/* <div className='App'>
+    <div className='content-wrap'>
+
+      <Navigation 
         currentCategory={currentCategory}
         handleCategoryChange={handleCategoryChange}
       />
       {renderCategory()}
+    </div>
       <ContactMe
         currentCategory={currentCategory}
         handleCategoryChange={handleCategoryChange}
       />
-    </div>
+    </div> */}
+      <Header />
+      <main className='py-3'>
+        <Container>
+          <Routes>
+            <Route path='/' element={<Header />} />
+            <Route path='/about' element={<AboutMe />} />
+            <Route path='/portfolio' element={<Header />} />
+            <Route path='/' element={<Header />} />
+          </Routes>
+        </Container>
+      </main>
+    </BrowserRouter>
   );
 }
 
