@@ -3,6 +3,7 @@ import './ContactMe.css';
 import { navigationLinks } from '../../helpers/navigationLinks';
 import { gitHub, linkedIn, email } from '../../helpers/icons';
 import Nav from 'react-bootstrap/Nav';
+import { Col, Row } from 'react-bootstrap'
 
 const createLinks = (handle) => {
   return navigationLinks.map((e, index) => (
@@ -21,11 +22,11 @@ function ContactMe({ currentCategory, handleCategoryChange }) {
         <div>
           <p>Fort Lauderdale, FL</p>
           <p>Stepan Matysik</p>
-          <ul>
-            <li>
+          <Row>
+            <Col>
               <a href='mailto:stepanmatysik@gmail.com'>{email}</a>
-            </li>
-            <li>
+            </Col>
+            <Col>
               <a
                 href='https://github.com/elfsvet'
                 target='_blank'
@@ -33,8 +34,8 @@ function ContactMe({ currentCategory, handleCategoryChange }) {
               >
                 {gitHub}
               </a>
-            </li>
-            <li>
+            </Col>
+            <Col>
               <a
                 href='https://www.linkedin.com/in/stepanmatysik/'
                 target='_blank'
@@ -42,8 +43,8 @@ function ContactMe({ currentCategory, handleCategoryChange }) {
               >
                 {linkedIn}
               </a>
-            </li>
-          </ul>
+            </Col>
+          </Row>
         </div>
         <div>{createLinks(handleCategoryChange)}</div>
       </div>
