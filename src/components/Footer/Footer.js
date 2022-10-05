@@ -18,7 +18,7 @@ const createLinks = () => {
 
 function Footer() {
   return (
-    <div className='contactMe__container' id=''  style={{ zIndex: 2 }}>
+    <div className='contactMe__container' id='contact'  style={{ zIndex: 2 }}>
       <div className='contactMe__data__links'>
         <div>
           <p>Fort Lauderdale, FL</p>
