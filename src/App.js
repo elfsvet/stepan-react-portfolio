@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <main className='App'>
         <NavigationBar />
-        <Container>
+        <div>
           <Routes>
             <Route
               path='/'
@@ -33,7 +33,7 @@ function App() {
             <Route path='/technologies' element={<Technologies />} />
             <Route path='/contacts' element={<ContactForm />} />
           </Routes>
-        </Container>
+        </div>
         <Footer />
       </main>
     </BrowserRouter>
