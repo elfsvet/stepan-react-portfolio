@@ -1,23 +1,24 @@
 import React from 'react';
-import './ContactMe.css';
+import './Footer.css';
 import { navigationLinks } from '../../helpers/navigationLinks';
 import { gitHub, linkedIn, email } from '../../helpers/icons';
 import Nav from 'react-bootstrap/Nav';
-import { Col, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
-const createLinks = (handle) => {
+const createLinks = () => {
   return navigationLinks.map((e, index) => (
     <Nav.Item key={index}>
-      <Nav.Link onClick={() => handle(e.name)} href={e.ref}>
+      <Nav.Link as={Link} to={e.link}>
         {e.name}
       </Nav.Link>
     </Nav.Item>
   ));
 };
 
-function ContactMe({ currentCategory, handleCategoryChange }) {
+function Footer() {
   return (
-    <div className='contactMe__container' id='contact'>
+    <div className='contactMe__container' id=''  style={{ zIndex: 2 }}>
       <div className='contactMe__data__links'>
         <div>
           <p>Fort Lauderdale, FL</p>
@@ -46,7 +47,7 @@ function ContactMe({ currentCategory, handleCategoryChange }) {
             </Col>
           </Row>
         </div>
-        <div>{createLinks(handleCategoryChange)}</div>
+        <div>{createLinks()}</div>
       </div>
       <div style={{ textAlign: 'center' }}>
         Copyright&copy; {new Date().getFullYear()} All rights reserved
@@ -55,4 +56,4 @@ function ContactMe({ currentCategory, handleCategoryChange }) {
   );
 }
 
-export default ContactMe;
+export default Footer;
