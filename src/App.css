@@ -2,7 +2,10 @@
 
 .App {
   font-family: 'Nunito',sans-serif;
-  background-color: var(--light-color);
+  background-color: #22262a;
+  position: relative;
+  min-height: 100vh;
+  
 }
 
 

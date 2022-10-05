@@ -1,6 +1,6 @@
-import React from 'react'
-import './AboutMe.css'
-import stepan from '../../images/stepan.jpg'
+import React from 'react';
+import './AboutMe.css';
+import stepan from '../../images/stepan.jpg';
 
 function AboutMe() {
   return (
@@ -8,24 +8,26 @@ function AboutMe() {
       <h1>About Me</h1>
       <div className='about__container__photo__text'>
         <div>
-          <img src={stepan} alt=" stepan photo" />
+          <img src={stepan} alt=' stepan photo' />
         </div>
         <div className='about__text'>
-          <p>Full-stack web developer leveraging psychology background to build a more intuitive user
-            experience on the web. Recently earned a certificate in full-stack development from the
-            Miami University Coding Boot Camp, with skills in JavaScript, CSS, React.js, Node.js, and responsive web
-            design. Known as an innovative problem solver passionate about developing apps, with a focus
-            on mobile-first design and development. Using excellent communication skills with the team,we were able to create a functional and responsive project, which is a joy to use. With each project, my aim is to best engage the target audience for an impactful user experience. Applied aspects of UX and agile development in a
-            recent project. Worked on a team of four to develop a single-page app that helps people to create craft drinks and locate the closest to them liquor stores to buy ingredients. Excited to
-            leverage the skills as part of a fast-paced, quality-driven team to build better experiences on the
-            web.
-
+          <p>
+            Enthusiastic Front-end Developer with a positive attitude and
+            motivated to create organized, clean code and responsive,
+            user-friendly applications. Received a certificate in Full stack web
+            development from the University of Miami and constantly looking at
+            next technological innovation. Versatile self-motivated, team player
+            with proven success in customer service, with flexibility to work in
+            a fast paced environment and cross-team collaboration. Proficient in
+            the MERN Stack; flexible, fast learner bringing attention to details
+            and passion to every project. Effective at combining creativity and
+            problem solving to develop innovative applications prior to tight
+            deadlines.
           </p>
         </div>
       </div>
-
     </div>
-  )
+  );
 }
 
-export default AboutMe
+export default AboutMe;
