@@ -1,7 +1,7 @@
 {
   "name": "stepan-react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://elfsvet.github.io/stepan-matysik",
+  "homepage": "https://elfsvet.github.io/stepan-react-portfolio/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
