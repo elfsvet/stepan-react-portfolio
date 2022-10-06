@@ -8,11 +8,11 @@ function TypeString() {
         options={{
           strings: [
             '',
-            'A Software Engineer',
+            'A Full stack developer',
             'Also known as a',
-            'Front-end developer',
+            'Software Engineer',
             'Back-end developer',
-            'Full stack developer',
+            'Front-end developer',
             'Or!',
             'a coder',
             '',
