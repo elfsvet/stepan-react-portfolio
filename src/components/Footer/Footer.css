@@ -15,7 +15,7 @@
 
 .contactMe__data__links {
     display        : flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .contactMe__data__links a {
