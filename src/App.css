@@ -26,11 +26,10 @@
 }
 
 .content-wrap {
-  padding-bottom: 10.5rem;
+  padding-bottom: 11rem;
   /* Footer height */
 }
 
-#appContent {
-  padding         : 3rem;
-
+.mainContainer{
+  padding:3rem;
 }

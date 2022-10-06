@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <main className='App'>
         <NavigationBar />
-        <div id='appContent'>
+        <div>
           <Routes>
             <Route
               path='/'

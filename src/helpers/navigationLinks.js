@@ -1,8 +1,8 @@
 export const navigationLinks = [
-    {
-        name: 'HOME',
-        link: '/'
-    },
+    // {
+    //     name: 'HOME',
+    //     link: '/'
+    // },
     {
         name: 'ABOUT',
         link: '/about'

@@ -1,7 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Portfolio.css';
 import portfolioData from '../../helpers/portfolioData';
-import { Container, Row, Card, Image, Modal, Button } from 'react-bootstrap';
+import {
+  Container,
+  Row,
+  Card,
+  Image,
+  Modal,
+  Button,
+  Col,
+} from 'react-bootstrap';
 import { gitHub } from '../../helpers/icons';
 import pdf from '../../resume/resume.pdf';
 
@@ -18,43 +26,64 @@ function Portfolio() {
         arial-labelledby='contained-modal-title-vcenter'
         centered
       >
-        <Modal.TypeString>
+        <Modal.Header>
           <Modal.Title id='contained-modal-title-vcenter'>
             {data.title}
           </Modal.Title>
-        </Modal.TypeString>
+        </Modal.Header>
         <Modal.Body>
           <p>{data.summary}</p>
           <Image src={data.image} style={{ width: '200px' }} />
         </Modal.Body>
-        <Button
-          href={data.link}
-          target='_blank'
+        <div
           style={{
-            maxWidth: '150px',
-            background: '#22262a',
-            margin: '5px',
-            borderColor: 'black',
+            display: 'flex',
+            justifyContent: 'center',
           }}
         >
-          Go to Web Site
-        </Button>
-        <Button
-          href={data.github_link}
-          target='_blank'
-          style={{
-            maxWidth: '150px',
-            background: '#22262a',
-            margin: '5px',
-            borderColor: 'black',
-          }}
-        >
-          {gitHub}
-        </Button>
+          <span>
+            <Button
+              // size='lg'
+              href={data.link}
+              target='_blank'
+              variant='dark'
+              style={{
+                maxWidth: '150px',
+                margin: '5px',
+                height: '50px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              Go to Web Site
+            </Button>
+          </span>
+          <span>
+            <Button
+              // size='lg'
+              href={data.github_link}
+              target='_blank'
+              variant='dark'
+              style={{
+                margin: '5px',
+                height: '50px',
+                width: '150px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              {gitHub}
+            </Button>
+          </span>
+        </div>
 
         <Modal.Footer>
-          <div>Technologies used: </div>
-          <p style={{ fontSize: '0.7rem', marginRight: 'auto' }}>{data.tech}</p>
+          <p>Technologies used: </p>
+          <p style={{ fontSize: '0.75rem', marginRight: 'auto' }}>
+            {data.tech}
+          </p>
           <Button variant='danger' onClick={() => setModalShow(false)}>
             Close
           </Button>
@@ -88,40 +117,33 @@ function Portfolio() {
   });
 
   return (
-    <div className='portfolio__main__container'>
+    <div className='mainContainer'>
       <div>
         <h1>Portfolio</h1>
       </div>
-      <p>
+      <div className='buttonHolder'>
         This is my GitHub page:
         <Button
           href='https://github.com/elfsvet'
           target='_blank'
-          style={{
-            maxWidth: '250px',
-            background: '#22262a',
-            marginLeft: '5px',
-            borderColor: 'black',
-          }}
+          className='blackButton'
+          variant='dark'
         >
           {gitHub}
         </Button>
-      </p>
-      <p>
+      </div>
+      <div className='buttonHolder'>
         This is my Resume:
         <Button
           href={pdf}
           target='_blank'
-          style={{
-            maxWidth: '250px',
-            background: '#22262a',
-            marginLeft: '5px',
-            borderColor: 'black',
-          }}
+          variant='dark'
+          className='blackButton'
+          // maxWidth='150px'
         >
           Download
         </Button>
-      </p>
+      </div>
 
       <Container fluid='lg' style={{ padding: '2rem 0' }}>
         <Row>{mapped}</Row>

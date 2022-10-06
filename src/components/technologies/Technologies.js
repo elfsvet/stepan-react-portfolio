@@ -8,7 +8,7 @@ const technologies = techs.map((tech) => ({ icon: tech.reactIcon }));
 // console.log(technologies)
 function Technologies() {
   return (
-    <div className='technologies__container'>
+    <div className='mainContainer'>
       <div>
         <h1 style={{ textAlign: 'center' }}>Some of the technologies I use:</h1>
       </div>

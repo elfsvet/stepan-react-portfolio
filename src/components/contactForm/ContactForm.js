@@ -77,7 +77,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container id='contact__form__container'>
+    <Container id='contact__form__container' className='mainContainer'>
       <h1>Contact me</h1>
 
       <Form id='contact__form' ref={form} onSubmit={sendEmail}>
