@@ -23,11 +23,11 @@ function Portfolio() {
         arial-labelledby='contained-modal-title-vcenter'
         centered
       >
-        <Modal.Header>
+        <Modal.TypeString>
           <Modal.Title id='contained-modal-title-vcenter'>
             {data.title}
           </Modal.Title>
-        </Modal.Header>
+        </Modal.TypeString>
         <Modal.Body>
           <p>{data.summary}</p>
           <Image src={data.image} style={{ width: '200px' }} />

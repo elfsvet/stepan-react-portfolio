@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 .main-info {
+  font-family: 'Silkscreen', cursive;
+  font-size: 2rem;
   display        : flex;
   position       : absolute;
-  color          : var(--font-color);
+  color          : gold;
   top            : 0;
   left           : 0;
   right          : 0;
