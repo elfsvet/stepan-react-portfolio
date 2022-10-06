@@ -33,7 +33,7 @@ const ContactForm = () => {
         setErrorMessage('');
       }
     } else {
-      if (e.target.value.length < 2) {
+      if (e.target.value.length) {
         setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
       } else {
         setErrorMessage('');
