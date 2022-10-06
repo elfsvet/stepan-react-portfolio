@@ -11,7 +11,7 @@ import NavigationBar from './components/NavigationBar/NavigationBar';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname}>
       <main className='App'>
         <NavigationBar />
         <div>
