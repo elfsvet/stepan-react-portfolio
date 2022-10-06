@@ -13,13 +13,14 @@ import { Row } from 'react-bootstrap';
 
 const ContactForm = () => {
   const form = useRef();
-//   error is not empty on initial state for not letting to send empty form
+  //   error is not empty on initial state for not letting to send empty form
   const [errorMessage, setErrorMessage] = useState(' ');
   const [formState, setFormState] = useState({
     name: '',
     email: '',
     message: '',
   });
+
   const { name, email, message } = formState;
 
   // JSX
@@ -32,7 +33,7 @@ const ContactForm = () => {
         setErrorMessage('');
       }
     } else {
-      if (!e.target.value.length) {
+      if (e.target.value.length < 2) {
         setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required.`);
       } else {
         setErrorMessage('');
@@ -40,14 +41,18 @@ const ContactForm = () => {
     }
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
-      //   console.log('Handle Form', formState);
     }
   };
   // console.log(formState);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (!errorMessage) {
+    if (
+      !errorMessage &&
+      email.length > 0 &&
+      name.length > 0 &&
+      message.length > 0
+    ) {
       emailjs
         .sendForm(
           'service_xat53sf',
@@ -72,58 +77,55 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='contact__main__container'>
-      <Container id='contact__form__container'>
-        <h1>Contact me</h1>
+    <Container id='contact__form__container'>
+      <h1>Contact me</h1>
 
-        <Form id='contact__form' ref={form} onSubmit={sendEmail}>
-          <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
-            <Form.Label>Name:</Form.Label>
-            <Form.Control
-              type='text'
-              name='name'
-              placeholder='Full Name'
-              defaultValue={name}
-              onBlur={handleChange}
-            ></Form.Control>
-          </Form.Group>
+      <Form id='contact__form' ref={form} onSubmit={sendEmail}>
+        <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
+          <Form.Label>Name:</Form.Label>
+          <Form.Control
+            type='text'
+            name='name'
+            placeholder='Full Name'
+            defaultValue={name}
+            onBlur={handleChange}
+          ></Form.Control>
+        </Form.Group>
 
-          <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
-            <Form.Label>Email address:</Form.Label>
-            <Form.Control
-              type='email'
-              name='email'
-              placeholder='name@example.com'
-              defaultValue={email}
-              onBlur={handleChange}
-            />
-          </Form.Group>
+        <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
+          <Form.Label>Email address:</Form.Label>
+          <Form.Control
+            type='email'
+            name='email'
+            placeholder='name@example.com'
+            defaultValue={email}
+            onBlur={handleChange}
+          />
+        </Form.Group>
 
-          <Form.Group className='mb-3' controlId='exampleForm.ControlTextarea1'>
-            <Form.Label>Message:</Form.Label>
-            <Form.Control
-              as='textarea'
-              name='message'
-              rows={5}
-              defaultValue={message}
-              onBlur={handleChange}
-            />
-          </Form.Group>
-          <Row>
-            <Button variant='dark' type='submit'>
-              Submit
-            </Button>
-          </Row>
-        </Form>
-
-        {/* this is refers as if(errorMessage){add div and p tags with info} */}
-        {errorMessage && (
-          <div>
-            <p className='error-text'>{errorMessage}</p>
-          </div>
-        )}
-      </Container>
-    </div>
+        <Form.Group className='mb-3' controlId='exampleForm.ControlTextarea1'>
+          <Form.Label>Message:</Form.Label>
+          <Form.Control
+            as='textarea'
+            name='message'
+            rows={5}
+            defaultValue={message}
+            onBlur={handleChange}
+          />
+        </Form.Group>
+        <Row>
+          {/* this is refers as if(errorMessage){add div and p tags with info} */}
+          {errorMessage && (
+            <div>
+              <p className='error-text'>{errorMessage}</p>
+            </div>
+          )}
+          <Button variant='dark' type='submit'>
+            Submit
+          </Button>
+        </Row>
+      </Form>
+    </Container>
   );
 };
 

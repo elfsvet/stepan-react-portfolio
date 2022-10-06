@@ -7,8 +7,7 @@
   position        : relative;
   padding-bottom  : 175.94px;
   min-height      : 100vh;
-
-
+  
 }
 
 
@@ -32,5 +31,6 @@
 }
 
 #appContent {
+  padding         : 3rem;
 
 }

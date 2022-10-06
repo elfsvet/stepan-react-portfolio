@@ -1,6 +1,4 @@
 import './App.css';
-import React, { useState } from 'react';
-import Navigation from './components/NavigationBar/NavigationBar';
 import Particles from './components/Particles';
 import TypeString from './components/TypeString/TypeString';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -9,7 +7,6 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Footer from './components/Footer/Footer';
 import ContactForm from './components/ContactForm/ContactForm';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 
 function App() {

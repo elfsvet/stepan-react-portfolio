@@ -4,7 +4,7 @@
     display         : flex;
     flex-direction  : column;
     align-items     : center;
-    padding         : 3rem;
+    /* padding         : 3rem; */
     /* min-height     : 94vh; */
     background-image: url(../../images/subtle-prism.svg);
 

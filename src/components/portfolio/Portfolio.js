@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import './Portfolio.css';
 import portfolioData from '../../helpers/portfolioData';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import { Container, Row, Card, Image, Modal, Button } from 'react-bootstrap';
 import { gitHub } from '../../helpers/icons';
 import pdf from '../../resume/resume.pdf';
 

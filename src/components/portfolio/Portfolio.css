@@ -1,12 +1,5 @@
 .portfolio__main__container {
-  /* background-color: var(--light-color); */
-  padding         : 3rem;
-  /* background-image: url(../../images/bbblurry.svg); */
-  background-image: url(../../images/subtle-prism.svg);
-    /* min-height: 94vh; */
-
-
-
+  /* padding         : 3rem; */
 }
 
 .portfolio__main__container h1, 
