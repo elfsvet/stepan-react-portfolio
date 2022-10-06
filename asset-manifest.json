@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/stepan-react-portfolio/static/css/main.12b19cd6.css",
-    "main.js": "/stepan-react-portfolio/static/js/main.8bfb0956.js",
-    "static/js/496.757cdef3.chunk.js": "/stepan-react-portfolio/static/js/496.757cdef3.chunk.js",
-    "static/media/clothing_shop.gif": "/stepan-react-portfolio/static/media/clothing_shop.8d009e34c5ecae449380.gif",
-    "static/media/Bar-Hop.gif": "/stepan-react-portfolio/static/media/Bar-Hop.a511f34161ab3985abc6.gif",
-    "static/media/shopp.gif": "/stepan-react-portfolio/static/media/shopp.91996b9cd018f9ed3e5e.gif",
-    "static/media/Lingua.gif": "/stepan-react-portfolio/static/media/Lingua.83c2a0ea47345a27435b.gif",
-    "static/media/tech_blog.gif": "/stepan-react-portfolio/static/media/tech_blog.fcc2e5e9444240683d56.gif",
-    "static/media/weather_dashboard.gif": "/stepan-react-portfolio/static/media/weather_dashboard.a81df84f4ef63af3d8a4.gif",
-    "static/media/note_taker.gif": "/stepan-react-portfolio/static/media/note_taker.dba917cce64cd0a01666.gif",
-    "static/media/budget_tracker.gif": "/stepan-react-portfolio/static/media/budget_tracker.6a631babaee8960a010c.gif",
-    "static/media/homebrew.gif": "/stepan-react-portfolio/static/media/homebrew.6c63356cb2db9ea68a36.gif",
-    "static/media/resume.pdf": "/stepan-react-portfolio/static/media/resume.6bd41f79097bd15cc56b.pdf",
-    "static/media/stepan.jpg": "/stepan-react-portfolio/static/media/stepan.0dd88e4a263be4f4abe8.jpg",
-    "static/media/subtle-prism.svg": "/stepan-react-portfolio/static/media/subtle-prism.aa429c5f8d2afd987d0b.svg",
-    "index.html": "/stepan-react-portfolio/index.html",
-    "main.12b19cd6.css.map": "/stepan-react-portfolio/static/css/main.12b19cd6.css.map",
-    "main.8bfb0956.js.map": "/stepan-react-portfolio/static/js/main.8bfb0956.js.map",
-    "496.757cdef3.chunk.js.map": "/stepan-react-portfolio/static/js/496.757cdef3.chunk.js.map"
+    "main.css": "/stepan-matysik/static/css/main.b0cc88d9.css",
+    "main.js": "/stepan-matysik/static/js/main.4712bcfe.js",
+    "static/media/clothing_shop.gif": "/stepan-matysik/static/media/clothing_shop.8d009e34c5ecae449380.gif",
+    "static/media/Bar-Hop.gif": "/stepan-matysik/static/media/Bar-Hop.a511f34161ab3985abc6.gif",
+    "static/media/shopp.gif": "/stepan-matysik/static/media/shopp.91996b9cd018f9ed3e5e.gif",
+    "static/media/Lingua.gif": "/stepan-matysik/static/media/Lingua.83c2a0ea47345a27435b.gif",
+    "static/media/tech_blog.gif": "/stepan-matysik/static/media/tech_blog.fcc2e5e9444240683d56.gif",
+    "static/media/weather_dashboard.gif": "/stepan-matysik/static/media/weather_dashboard.a81df84f4ef63af3d8a4.gif",
+    "static/media/note_taker.gif": "/stepan-matysik/static/media/note_taker.dba917cce64cd0a01666.gif",
+    "static/media/budget_tracker.gif": "/stepan-matysik/static/media/budget_tracker.6a631babaee8960a010c.gif",
+    "static/media/homebrew.gif": "/stepan-matysik/static/media/homebrew.6c63356cb2db9ea68a36.gif",
+    "static/media/resume.pdf": "/stepan-matysik/static/media/resume.6bd41f79097bd15cc56b.pdf",
+    "static/media/stepan.jpg": "/stepan-matysik/static/media/stepan.0dd88e4a263be4f4abe8.jpg",
+    "static/media/subtle-prism.svg": "/stepan-matysik/static/media/subtle-prism.aa429c5f8d2afd987d0b.svg",
+    "index.html": "/stepan-matysik/index.html",
+    "main.b0cc88d9.css.map": "/stepan-matysik/static/css/main.b0cc88d9.css.map",
+    "main.4712bcfe.js.map": "/stepan-matysik/static/js/main.4712bcfe.js.map"
   },
   "entrypoints": [
-    "static/css/main.12b19cd6.css",
-    "static/js/main.8bfb0956.js"
+    "static/css/main.b0cc88d9.css",
+    "static/js/main.4712bcfe.js"
   ]
 }
