@@ -9,7 +9,7 @@ function TypeString() {
           strings: [
             '',
             'A Software Engineer',
-            'Also known as an',
+            'Also known as a',
             'Front-end developer',
             'Back-end developer',
             'Full stack developer',
