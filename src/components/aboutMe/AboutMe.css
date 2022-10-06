@@ -1,9 +1,9 @@
 .about__container {
   padding: 3rem;
-  /* min-height     : calc(100vh - 380px); */
+  /* min-height     : 94vh; */
   /* background-color: var(--light-color); */
   /* background-image: url(../../images/bbburst.svg); */
-  background-image: url(../../images/subtle-prism.svg);
+  /* background-image: url(../../images/subtle-prism.svg); */
 }
 
 .about__container__photo__text {

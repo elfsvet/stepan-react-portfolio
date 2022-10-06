@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
 
 .App {
-  font-family: 'Nunito',sans-serif;
-  /* background-color: #22262a; */
-  position: relative;
-  min-height: 100vh;
-  
+  font-family     : 'Nunito', sans-serif;
+  background-image: url(./images/subtle-prism.svg);
+  display         : block;
+  position        : relative;
+  padding-bottom  : 175.94px;
+  min-height      : 100vh;
+
+
 }
 
 
@@ -20,9 +23,14 @@
 
 
 #tsparticles {
-  height: 98vh; 
+  height: 98vh;
 }
 
 .content-wrap {
-  padding-bottom: 10.5rem;    /* Footer height */
+  padding-bottom: 10.5rem;
+  /* Footer height */
+}
+
+#appContent {
+
 }

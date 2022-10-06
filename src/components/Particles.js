@@ -1,7 +1,7 @@
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; // loads tsparticles-slim
+import Particles from 'react-tsparticles';
+import { loadSlim } from 'tsparticles-slim'; // loads tsparticles-slim
 //import { loadFull } from "tsparticles"; // loads tsparticles
-import { useCallback, useMemo } from "react";
+import { useCallback, useMemo } from 'react';
 
 // tsParticles Repository: https://github.com/matteobruni/tsparticles
 // tsParticles Website: https://particles.js.org/
@@ -12,7 +12,7 @@ const ParticlesComponent = (props) => {
     // all options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
     return {
       background: {
-        color: "#000", // this sets a background color for the canvas
+        color: '#000', // this sets a background color for the canvas
       },
       fullScreen: {
         enable: false, // enabling this will make the canvas fill the entire screen, it's enabled by default
@@ -22,7 +22,7 @@ const ParticlesComponent = (props) => {
         events: {
           onClick: {
             enable: true, // enables the click event
-            mode: "push", // adds the particles on click
+            mode: 'push', // adds the particles on click
           },
           // onHover: {
           //   enable: true, // enables the hover event
@@ -43,13 +43,12 @@ const ParticlesComponent = (props) => {
           repulse: {
             distance: 200, // distance of the particles from the cursor
             duration: 0.4,
-
           },
         },
       },
       particles: {
         color: {
-          value: '#ffffff'
+          value: '#ffffff',
         },
         links: {
           color: '#00878F',
@@ -57,8 +56,8 @@ const ParticlesComponent = (props) => {
           distance: 150, // maximum distance for linking the particles
         },
         move: {
-          direction: "none",
-          outMode: "bounce",
+          direction: 'none',
+          outMode: 'bounce',
           random: false,
           straight: false,
 

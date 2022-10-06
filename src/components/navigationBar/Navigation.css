@@ -2,8 +2,6 @@
     background-color: var(--nav-color);
     color           : white;
     position        : 'fixed';
-    
-
     top  : '0';
     width: '100%';
 }

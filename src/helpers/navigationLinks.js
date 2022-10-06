@@ -1,7 +1,7 @@
 export const navigationLinks = [
     {
         name: 'HOME',
-        link: '/home'
+        link: '/'
     },
     {
         name: 'ABOUT',
