@@ -29,6 +29,15 @@ function App() {
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/technologies' element={<Technologies />} />
             <Route path='/contacts' element={<ContactForm />} />
+            <Route
+              path='/*'
+              element={
+                <>
+                  <TypeString />
+                  <Particles />
+                </>
+              }
+            />
           </Routes>
         </div>
         <Footer />
