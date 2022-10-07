@@ -33,7 +33,7 @@ const ContactForm = () => {
 
   const [modalShow, setModalShow] = useState(false);
 
-  const createModal = (sendStatus) => {
+  const createModal = () => {
     return (
       <Modal
         show={modalShow}
@@ -42,20 +42,6 @@ const ContactForm = () => {
         arial-labelledby='contained-modal-title-vcenter'
         centered
       >
-        {/* <Modal.Header>
-          <Modal.Title id='contained-modal-title-vcenter'>
-           HEy Im modal
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>{sendStatus}</p>
-          <BiMailSend/>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant='danger' onClick={() => setModalShow(false)}>
-            Close
-          </Button>
-        </Modal.Footer> */}
         <Modal.Header closeButton>
           <Modal.Title>
             The message successfully sent{' '}
@@ -64,10 +50,8 @@ const ContactForm = () => {
         </Modal.Header>
 
         <Modal.Body>
-          <p>
-            I will get in touch with you shortly. Thank you.{' '}
-            <BiWinkSmile style={{ fontSize: '1.5rem' }} />
-          </p>
+          I will get in touch with you shortly. Thank you.{' '}
+          <BiWinkSmile style={{ fontSize: '1.5rem' }} />
         </Modal.Body>
       </Modal>
     );
@@ -77,7 +61,13 @@ const ContactForm = () => {
     e.preventDefault();
 
     // check email name message validity
-    if (!validateEmail(email) || !name || !message) {
+    if (
+      !validateEmail(email) ||
+      !name ||
+      !message ||
+      name.length < 2 ||
+      message.length < 2
+    ) {
       setErrorMessage(
         'Email, name or message is missing. Fill these fields up and re-submit.'
       );
@@ -94,15 +84,11 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log('Message sent');
           e.target.reset();
-          // update in the future for a nice message
-          // alert('Message sent successfully');
           setEmail('');
           setName('');
           setMessage('');
           setErrorMessage('');
-          // createModal('Sent')
           setModalShow(true);
         },
         (error) => {
@@ -114,7 +100,7 @@ const ContactForm = () => {
   return (
     <Container id='contact__form__container' className='mainContainer'>
       <h1>Contact me</h1>
-      <div>{createModal('Sent')}</div>
+      <div>{createModal()}</div>
       <Row>
         <Col>
           <Form id='contact__form' ref={form} onSubmit={handleFormSubmit}>
@@ -136,7 +122,7 @@ const ContactForm = () => {
                 name='email'
                 placeholder='name@example.com'
                 defaultValue={email}
-                onBlur={handleInputChange}
+                onChange={handleInputChange}
               />
             </Form.Group>
 
@@ -150,7 +136,7 @@ const ContactForm = () => {
                 name='message'
                 rows={5}
                 defaultValue={message}
-                onBlur={handleInputChange}
+                onChange={handleInputChange}
               />
             </Form.Group>
             <Button variant='dark' type='submit' style={{ width: '100%' }}>
