@@ -26,7 +26,7 @@ import {
   SiNetlify,
   SiHeroku,
   SiPostman,
-  SiInsomnia
+  SiInsomnia,
 } from 'react-icons/si';
 
 export const techs = [
