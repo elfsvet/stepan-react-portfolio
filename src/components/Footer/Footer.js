@@ -25,7 +25,7 @@ function Footer() {
           <p>Stepan Matysik</p>
           <Row>
             <Col>
-              <a href='mailto:stepanmatysik@gmail.com'>{email}</a>
+              <a href='mailto:stmatysik@gmail.com'>{email}</a>
             </Col>
             <Col>
               <a
@@ -38,7 +38,7 @@ function Footer() {
             </Col>
             <Col>
               <a
-                href='https://www.linkedin.com/in/stepanmatysik/'
+                href='https://www.linkedin.com/in/stepan-matysik-b9b272252'
                 target='_blank'
                 rel='noreferrer'
               >
