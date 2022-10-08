@@ -21,7 +21,7 @@ function App() {
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/technologies' element={<Technologies />} />
             <Route path='/contacts' element={<ContactForm />} />
-            <Route path='*' element={<ErrorPage />} />
+            <Route path='/*' element={<ErrorPage />} />
           </Routes>
         </div>
         <Footer />
