@@ -16,28 +16,12 @@ function App() {
         <NavigationBar />
         <div>
           <Routes>
-            <Route
-              path='/'
-              element={
-                <>
-                  {/* <TypeString /> */}
-                  <Particles />
-                </>
-              }
-            />
+            <Route path='/' element={<Particles />} />
             <Route path='/about' element={<AboutMe />} />
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/technologies' element={<Technologies />} />
             <Route path='/contacts' element={<ContactForm />} />
-            <Route
-              path='/*'
-              element={
-                <>
-                  <TypeString />
-                  <Particles />
-                </>
-              }
-            />
+            <Route path='*' element={<Particles />} />
           </Routes>
         </div>
         <Footer />
