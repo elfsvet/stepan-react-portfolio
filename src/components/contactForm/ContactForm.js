@@ -102,7 +102,7 @@ const ContactForm = () => {
       <h1>Contact me</h1>
       <div>{createModal()}</div>
       <Row>
-        <Col>
+        <Col md={6} style={{paddingBottom:'2rem'}}>
           <Form id='contact__form' ref={form} onSubmit={handleFormSubmit}>
             <Form.Group className='mb-3' controlId='exampleForm.ControlInput1'>
               <Form.Label>Name:</Form.Label>
@@ -144,7 +144,7 @@ const ContactForm = () => {
             </Button>
           </Form>
         </Col>
-        <Col as='div' className='error-checkbox'>
+        <Col as='div' className='error-checkbox' md={6}>
           <div>
             <p>
               Name should be at least 2 characters long{' '}

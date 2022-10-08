@@ -2,6 +2,7 @@ import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim'; // loads tsparticles-slim
 //import { loadFull } from "tsparticles"; // loads tsparticles
 import { useCallback, useMemo } from 'react';
+import TypeString from './TypeString/TypeString';
 
 // tsParticles Repository: https://github.com/matteobruni/tsparticles
 // tsParticles Website: https://particles.js.org/
@@ -81,7 +82,12 @@ const ParticlesComponent = (props) => {
   }, []);
 
   // setting an id can be useful for identifying the right particles component, this is useful for multiple instances or reusable components
-  return <Particles id={props.id} init={particlesInit} options={options} />;
+  return (
+    <>
+      <TypeString />
+      <Particles id={props.id} init={particlesInit} options={options} />
+    </>
+  );
 };
 
 export default ParticlesComponent;

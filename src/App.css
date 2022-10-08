@@ -5,9 +5,8 @@
   background-image: url(./images/subtle-prism.svg);
   display         : block;
   position        : relative;
-  padding-bottom  : 175.94px;
+  padding-bottom  : 192.94px;
   min-height      : 100vh;
-  
 }
 
 
@@ -32,4 +31,9 @@
 
 .mainContainer{
   padding:3rem;
+  margin-bottom: 2rem;
+}
+
+.modalBorder {
+  border: none;
 }

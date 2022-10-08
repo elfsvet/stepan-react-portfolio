@@ -59,6 +59,10 @@
   margin-left: 5px;
 }
 
+.removeBorder {
+  border: none;
+}
+
 @media only screen and (max-width: 600px) {
   #portfolio__card__container {
     width  : 100%;

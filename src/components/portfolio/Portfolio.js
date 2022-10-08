@@ -26,19 +26,24 @@ function Portfolio() {
         arial-labelledby='contained-modal-title-vcenter'
         centered
       >
-        <Modal.Header>
+        <Modal.Header style={{ border: 'none' }}>
           <Modal.Title id='contained-modal-title-vcenter'>
             {data.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>{data.summary}</p>
-          <Image src={data.image} style={{ width: '200px' }} />
+          <Row>
+            <p>{data.summary}</p>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Image src={data.image} style={{ maxWidth: '600px' }} />
+          </Row>
         </Modal.Body>
         <div
           style={{
             display: 'flex',
             justifyContent: 'center',
+            paddingTop:'2rem'
           }}
         >
           <span>
@@ -79,7 +84,7 @@ function Portfolio() {
           </span>
         </div>
 
-        <Modal.Footer>
+        <Modal.Footer style={{ border: 'none' }}>
           <p>Technologies used: </p>
           <p style={{ fontSize: '0.75rem', marginRight: 'auto' }}>
             {data.tech}
