@@ -5,7 +5,7 @@ import Technologies from './components/Technologies/Technologies';
 import Portfolio from './components/Portfolio/Portfolio';
 import Footer from './components/Footer/Footer';
 import ContactForm from './components/ContactForm/ContactForm';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 
@@ -21,7 +21,7 @@ function App() {
             <Route path='/portfolio' element={<Portfolio />} />
             <Route path='/technologies' element={<Technologies />} />
             <Route path='/contacts' element={<ContactForm />} />
-            <Route path='/*' element={<ErrorPage />} />
+            <Route path='*' element={<Navigate to='/' />} />
           </Routes>
         </div>
         <Footer />
