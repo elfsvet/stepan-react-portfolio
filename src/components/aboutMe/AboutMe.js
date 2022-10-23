@@ -12,7 +12,7 @@ function AboutMe() {
         </div>
         <div className='about__text'>
           <p>
-            Enthusiastic Front-end Developer with a positive attitude and
+            Enthusiastic Full Stack Web Developer with a positive attitude and
             motivated to create organized, clean code and responsive,
             user-friendly applications. Received a certificate in Full stack web
             development from the University of Miami and constantly looking at
