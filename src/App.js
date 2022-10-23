@@ -5,13 +5,14 @@ import Technologies from './components/Technologies/Technologies';
 import Portfolio from './components/Portfolio/Portfolio';
 import Footer from './components/Footer/Footer';
 import ContactForm from './components/ContactForm/ContactForm';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   return (
-    <BrowserRouter basename={window.location.pathname}>
+    <HashRouter //BrowserRouter basename={window.location.pathname}
+    >
       <main className='App'>
         <NavigationBar />
         <div>
@@ -26,7 +27,7 @@ function App() {
         </div>
         <Footer />
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
